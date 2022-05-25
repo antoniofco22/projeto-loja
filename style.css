@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, 'Courier New', Courier, monospace, sans-serif;
+    
+
+}
+.cabecalho{
+    background: rebeccapurple;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bolder;
+    padding: 1vw;
+    width: 98%
+}
+#logo,#menu,#cart, nav svg{
+    height:3.125rem;
+
+}
+nav a {
+    padding: 0.625rem;
+}
+nav{
+    padding: 1rem 0 1rem 0 ;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5b57e;
+}
+header,article{
+    width: 92vw;
+}
+#logo{
+    display: inline-block;
+}
+#menu,#cart{
+    float: right;
+}
+#banner img{
+    width: 92vw;
+}
+@font-face {
+    src: url(font/ChauPhilomeneOne-Regular.ttf) format('truetype');
+    font-family: 'ChauPhilomeneOne-Regular';    
+    font-weight: normal;
+} 
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@1&display=swap');
+h1{
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+#title{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem;
+    text-align: center;
+;}
+
+#products{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+
+}
+.product{
+    padding: 0.5vw;
+    width: 22vw;
+   
+}
+.img, .img img{
+    max-width: 22vw;
+}
+.img {
+    height: 22vw;
+}
+.details{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.name{
+    font-weight: bolder;
+}
+
+.product:hover{
+    background: rgba(121, 78, 78, 0.671);
+}
+#products a{
+    text-decoration: none;
+    color: black;
+
+}
+footer{
+    background: rgb(57, 226, 142);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0 1rem 0 ;
+}
+footer svg:hover{
+    fill: rgb(255, 0, 0);
+   
+}
+
+@media only screen and (max-width: 767px){
+        
+    }
