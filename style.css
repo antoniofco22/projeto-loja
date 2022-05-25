@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@1&display=swap');
+h1{
+    font-family: 'Chau Philomene One', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,8 +10,8 @@
 
 }
 .cabecalho{
-    background: rebeccapurple;
-    color: white;
+    background: #663399;
+    color: #ffffff;
     font-size: 1.4rem;
     text-align: center;
     font-weight: bolder;
@@ -45,20 +49,12 @@ header,article{
 #banner img{
     width: 92vw;
 }
-@font-face {
-    src: url(font/ChauPhilomeneOne-Regular.ttf) format('truetype');
-    font-family: 'ChauPhilomeneOne-Regular';    
-    font-weight: normal;
-} 
-@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@1&display=swap');
-h1{
-    font-family: 'Chau Philomene One', sans-serif;
-}
+
+
 
 #title{
     font-size: 2rem;
-    font-weight: 600;
-    padding: 2rem;
+      padding: 2rem;
     text-align: center;
 ;}
 
@@ -88,15 +84,15 @@ h1{
 }
 
 .product:hover{
-    background: rgba(121, 78, 78, 0.671);
+    background: #794e4eab;
 }
 #products a{
     text-decoration: none;
-    color: black;
+    color: #000000;
 
 }
 footer{
-    background: rgb(57, 226, 142);
+    background: #39e28d;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -104,10 +100,74 @@ footer{
     padding: 1rem 0 1rem 0 ;
 }
 footer svg:hover{
-    fill: rgb(255, 0, 0);
+    fill: #ff0000;
+}
+
+
+
+#nav{
+    position: fixed;
+    top: 0;
+    width: 25%;
+    background: #050505a9;
+    right: 0;
+    text-decoration: none;
+}
+
+#close,#close svg{
+    width: 3.125rem;
+    fill: #ffe4c4;
+    right: 10%;
+    float: right;
+    padding: 0.625rem;
+
+}
+#nav ul{
+    width: 100%;
+    padding: 8rem 0px 0px 8rem;
    
 }
+#nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+#nav li{
+    list-style-type: none;
+
+}
+#nav a:hover {
+    color: #f59595;
+    
+}
+#close svg:hover {
+    fill: #f59595;
+}
+
+#products  a:nth-child(3)  img{
+    padding: 2.5rem 0 0 0;
+   
+}
+#products  a:nth-child(4)  img{
+    padding: 0.313rem 0 0px 0;
+}
+
+
+
 
 @media only screen and (max-width: 767px){
         
+    #nav{
+        width: 40%;
+
     }
+    #nav ul{
+    padding: 5rem 0px 0px 2rem;}
+    #nav a{
+    font-size: 2.0rem;}
+    #products  a:nth-child(3)  img{
+        padding: 1.188rem 0 0px 0;
+       
+    }
+}

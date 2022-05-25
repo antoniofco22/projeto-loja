@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <title>loja</title>
     <link rel="stylesheet" href="style.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 <section>
@@ -22,10 +20,10 @@
             </a>
         </div>
 
-        <div id="menu">
-            <a href="">
+        <div id="menu" onclick="menu()">
+           
                 <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="48px" height="48px"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/></svg>
-            </a>
+            
          </div>
          <div id="cart">
             <a href="">
@@ -91,7 +89,7 @@
         <a href="#vegetariano">
             <div class="product">
                 <div class="img">
-                    <img src="https://d3sn2rlrwxy0ce.cloudfront.net/_800x600_crop_center-center_none/veggie-thumb_2021-09-16-144921_qpup.png?mtime=20210916144922&focal=none&tmtime=20210916145053" alt="imagem vegano" style="padding: 44px 0 0px 0;">
+                    <img src="https://d3sn2rlrwxy0ce.cloudfront.net/_800x600_crop_center-center_none/veggie-thumb_2021-09-16-144921_qpup.png?mtime=20210916144922&focal=none&tmtime=20210916145053" alt="imagem vegano" >
                 </div>
                 <div class="details">
                     <div class="name">
@@ -107,7 +105,7 @@
         <a href="#ligth">
             <div class="product">
                 <div class="img" style="text-align:center;">
-                    <img src="imagens/hamburguer light.png" alt="imagem Light" style="width:45vh; padding: 35px 0 0px 0;">
+                    <img src="imagens/hamburguer light.png" alt="imagem Light" style="width:45vh; ">
                 </div>
                 <div class="details">
                     <div class="name">
@@ -144,7 +142,41 @@
          </svg></a></div>
     </footer>
 </section>
+<div class="nav" id="nav" style="display: none;">
+    <div onclick="menu()" id="close">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 52.001 52.001" style="enable-background:new 0 0 52.001 52.001;" xml:space="preserve">
 
+		<path  d="M47.743,41.758L33.955,26.001l13.788-15.758c2.343-2.344,2.343-6.143,0-8.486
+			c-2.345-2.343-6.144-2.342-8.486,0.001L26,16.91L12.743,1.758C10.4-0.584,6.602-0.585,4.257,1.757
+			c-2.343,2.344-2.343,6.143,0,8.486l13.788,15.758L4.257,41.758c-2.343,2.343-2.343,6.142-0.001,8.485
+			c2.344,2.344,6.143,2.344,8.487,0L26,35.091l13.257,15.152c2.345,2.344,6.144,2.344,8.487,0
+			C50.086,47.9,50.086,44.101,47.743,41.758z"/>
+        </svg>
+    </div>
+    <ul>
+        <a href="index.html">
+            <li>Home</li>
+        </a>
+        <a href="">
+            <li>loja</li>
+        </a>
+        <a href="">
+            <li>contato</li>
+        </a>
+       
+    </ul>
+
+</div>
+<script>
+    
+    function menu(){
+        x=document.getElementById("nav");
+        if(x.style.display==="none"){
+            x.style.display="block";
+
+    }else{x.style.display="none";}}
+</script>
     
 </body>
 </html>
